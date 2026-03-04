@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../../../../images/icon_dark.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
     
       
@@ -350,6 +350,28 @@
     
   
   Contribute
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../migration/particle-data/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Migration
 
         </a>
       </li>
@@ -3896,6 +3918,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -4040,6 +4068,90 @@
     
   
     particula.gas.gas_data_builder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gas/latent_heat_builders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    particula.gas.latent_heat_builders
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gas/latent_heat_factories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    particula.gas.latent_heat_factories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../gas/latent_heat_strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    particula.gas.latent_heat_strategies
   
 
     
@@ -4295,10 +4407,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_18_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_18_15" >
         
           
-          <label class="md-nav__link" for="__nav_2_3_18_12" id="__nav_2_3_18_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3_18_15" id="__nav_2_3_18_15_label" tabindex="0">
             
   
   
@@ -4316,8 +4428,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_18_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3_18_12">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_18_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_18_15">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -11105,7 +11217,7 @@
   <span class="md-ellipsis">
     
   
-    Particle and Gas Data Migration Guide
+    ParticleData and GasData Migration
   
 
     
@@ -13617,6 +13729,97 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Migration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../migration/particle-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ParticleData and GasData Migration (Redirect)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -14308,7 +14511,10 @@ summed during collisions. If None, charge handling is skipped.</p>
 <span class="normal">237</span>
 <span class="normal">238</span>
 <span class="normal">239</span>
-<span class="normal">240</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">collide_pairs</span><span class="p">(</span>  <span class="c1"># pylint: disable=too-many-positional-arguments</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">collide_pairs</span><span class="p">(</span>  <span class="c1"># pylint: disable=too-many-positional-arguments</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="n">distribution</span><span class="p">:</span> <span class="n">NDArray</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">],</span>
     <span class="n">concentration</span><span class="p">:</span> <span class="n">NDArray</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">],</span>
@@ -14350,13 +14556,15 @@ summed during collisions. If None, charge handling is skipped.</p>
     <span class="n">small_index</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
     <span class="n">large_index</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
 
-    <span class="c1"># Handle mass (existing logic)</span>
+    <span class="c1"># Handle mass with unbuffered accumulation for duplicate indices.</span>
     <span class="k">if</span> <span class="n">distribution</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="n">distribution</span><span class="p">[</span><span class="n">large_index</span><span class="p">]</span> <span class="o">+=</span> <span class="n">distribution</span><span class="p">[</span><span class="n">small_index</span><span class="p">]</span>
+        <span class="n">small_mass</span> <span class="o">=</span> <span class="n">distribution</span><span class="p">[</span><span class="n">small_index</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
         <span class="n">distribution</span><span class="p">[</span><span class="n">small_index</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="o">.</span><span class="n">at</span><span class="p">(</span><span class="n">distribution</span><span class="p">,</span> <span class="n">large_index</span><span class="p">,</span> <span class="n">small_mass</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">distribution</span><span class="p">[</span><span class="n">large_index</span><span class="p">,</span> <span class="p">:]</span> <span class="o">+=</span> <span class="n">distribution</span><span class="p">[</span><span class="n">small_index</span><span class="p">,</span> <span class="p">:]</span>
+        <span class="n">small_mass</span> <span class="o">=</span> <span class="n">distribution</span><span class="p">[</span><span class="n">small_index</span><span class="p">,</span> <span class="p">:]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
         <span class="n">distribution</span><span class="p">[</span><span class="n">small_index</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="o">.</span><span class="n">at</span><span class="p">(</span><span class="n">distribution</span><span class="p">,</span> <span class="n">large_index</span><span class="p">,</span> <span class="n">small_mass</span><span class="p">)</span>
     <span class="n">concentration</span><span class="p">[</span><span class="n">small_index</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 
     <span class="c1"># Handle charge if present as numpy array and non-zero</span>
@@ -14366,8 +14574,9 @@ summed during collisions. If None, charge handling is skipped.</p>
         <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">charge</span><span class="p">[</span><span class="n">small_index</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span>
             <span class="n">charge</span><span class="p">[</span><span class="n">large_index</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span>
         <span class="p">):</span>
-            <span class="n">charge</span><span class="p">[</span><span class="n">large_index</span><span class="p">]</span> <span class="o">+=</span> <span class="n">charge</span><span class="p">[</span><span class="n">small_index</span><span class="p">]</span>
+            <span class="n">small_charge</span> <span class="o">=</span> <span class="n">charge</span><span class="p">[</span><span class="n">small_index</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
             <span class="n">charge</span><span class="p">[</span><span class="n">small_index</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="o">.</span><span class="n">at</span><span class="p">(</span><span class="n">charge</span><span class="p">,</span> <span class="n">large_index</span><span class="p">,</span> <span class="n">small_charge</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">distribution</span><span class="p">,</span> <span class="n">concentration</span><span class="p">,</span> <span class="n">charge</span>
 </code></pre></div></td></tr></table></div>
